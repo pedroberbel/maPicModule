@@ -14,6 +14,8 @@
 		CDBDF4171E97D02A00920FA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBDF4161E97D02A00920FA7 /* Assets.xcassets */; };
 		CDBDF41A1E97D02A00920FA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDBDF4181E97D02A00920FA7 /* LaunchScreen.storyboard */; };
 		CDBDF4221E97D70100920FA7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDF4211E97D70100920FA7 /* MapViewController.swift */; };
+		CDBDF4261E97F9B700920FA7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBDF4251E97F9B700920FA7 /* MapKit.framework */; };
+		CDBDF4281E98087900920FA7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBDF4271E98087900920FA7 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		CDBDF4191E97D02A00920FA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDBDF41B1E97D02A00920FA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDBDF4211E97D70100920FA7 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CDBDF4251E97F9B700920FA7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CDBDF4271E98087900920FA7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDBDF4281E98087900920FA7 /* CoreLocation.framework in Frameworks */,
+				CDBDF4261E97F9B700920FA7 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 			children = (
 				CDBDF40B1E97D02A00920FA7 /* maPicModule */,
 				CDBDF40A1E97D02A00920FA7 /* Products */,
+				CDBDF4241E97F9B700920FA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +83,15 @@
 				CDBDF4211E97D70100920FA7 /* MapViewController.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		CDBDF4241E97F9B700920FA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDBDF4271E98087900920FA7 /* CoreLocation.framework */,
+				CDBDF4251E97F9B700920FA7 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +127,11 @@
 					CDBDF4081E97D02A00920FA7 = {
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -315,6 +336,7 @@
 				CDBDF4201E97D02A00920FA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
