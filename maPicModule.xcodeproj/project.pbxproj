@@ -16,6 +16,7 @@
 		CDBDF4221E97D70100920FA7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBDF4211E97D70100920FA7 /* MapViewController.swift */; };
 		CDBDF4261E97F9B700920FA7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBDF4251E97F9B700920FA7 /* MapKit.framework */; };
 		CDBDF4281E98087900920FA7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBDF4271E98087900920FA7 /* CoreLocation.framework */; };
+		CDBDF42B1E9D198A00920FA7 /* urehere.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBDF42A1E9D198A00920FA7 /* urehere.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CDBDF4211E97D70100920FA7 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CDBDF4251E97F9B700920FA7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CDBDF4271E98087900920FA7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CDBDF42A1E9D198A00920FA7 /* urehere.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = urehere.png; path = ../../../../../Desktop/urehere.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		CDBDF40B1E97D02A00920FA7 /* maPicModule */ = {
 			isa = PBXGroup;
 			children = (
+				CDBDF4291E9D197B00920FA7 /* images */,
 				CDBDF4231E97D70600920FA7 /* Views */,
 				CDBDF40C1E97D02A00920FA7 /* AppDelegate.swift */,
 				CDBDF40E1E97D02A00920FA7 /* ViewController.swift */,
@@ -92,6 +95,14 @@
 				CDBDF4251E97F9B700920FA7 /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDBDF4291E9D197B00920FA7 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CDBDF42A1E9D198A00920FA7 /* urehere.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 			files = (
 				CDBDF41A1E97D02A00920FA7 /* LaunchScreen.storyboard in Resources */,
 				CDBDF4171E97D02A00920FA7 /* Assets.xcassets in Resources */,
+				CDBDF42B1E9D198A00920FA7 /* urehere.png in Resources */,
 				CDBDF4121E97D02A00920FA7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

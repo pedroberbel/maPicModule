@@ -65,12 +65,43 @@
                                     <action selector="takePictureButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="giR-dQ-HTy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Liq-yN-w7F">
+                                <rect key="frame" x="160" y="562" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveNewPin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m2x-Fo-7sw"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hqF-Dz-yb7">
+                                <rect key="frame" x="16" y="259" width="343" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ePX-BF-mzK">
+                                <rect key="frame" x="33" y="281" width="308" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wjx-oj-97P">
+                                <rect key="frame" x="33" y="326" width="308" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Around Map" id="U1z-Ui-6bo"/>
                     <connections>
+                        <outlet property="createPinName" destination="ePX-BF-mzK" id="Zol-Lx-a5R"/>
+                        <outlet property="createPinSub" destination="wjx-oj-97P" id="cb0-KS-s70"/>
+                        <outlet property="createPinView" destination="hqF-Dz-yb7" id="huI-bk-DKq"/>
                         <outlet property="mapView" destination="Tob-Qg-z9N" id="hud-fa-jEQ"/>
+                        <outlet property="saveNewPin" destination="Liq-yN-w7F" id="Aqp-1K-lN1"/>
                         <outlet property="takePictureButton" destination="CMz-Hf-zME" id="ifm-Tn-BxB"/>
                     </connections>
                 </viewController>
